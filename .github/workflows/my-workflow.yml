@@ -1,1 +1,13 @@
+name: My Workflow
+```
 
+Replace 'My Workflow' with the name you want to give to your workflow.
+on:
+  push:
+    branches: [main]
+    jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Hello, world!"
